@@ -6,3 +6,4 @@ export default defineConfig({
   plugins: [react()],
   base: '/brunlike/', // 👈 replace with your GitHub repo name
 })
+
