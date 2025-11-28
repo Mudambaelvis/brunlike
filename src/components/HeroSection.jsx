@@ -1,4 +1,4 @@
-import backgroundImage from '../assets/plane2.jpg'; // Adjust the path as necessary
+import backgroundImage from '../assets/books.jpg'; // Adjust the path as necessary
 
 export default function HeroSection() {
   return (
@@ -12,9 +12,12 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-black bg-opacity-40"></div> {/* dark overlay */}
       
       <div className="relative z-10 text-center">
-        <h1 className="text-5xl md:text-6xl font-bold mb-4">BRUNS GROUP</h1>
+        <h1 className="text-5xl md:text-6xl font-bold mb-4">Welcome to our Research Lab</h1>
         <p className="text-lg md:text-xl max-w-2xl mx-auto">
-          Sustainable Functional Polymers Research Group at the Technical University of Darmstadt
+
+
+                     Advancing knowledge through innovation, collaboration, and scientific excellence.
+
         </p>
       </div>
     </section>

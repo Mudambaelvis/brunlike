@@ -1,73 +1,147 @@
-import HeroSection from "../components/HeroSection";
-import bg1 from "../assets/plane.jpg";
-import bg2 from "../assets/plane3.jpg";
-import bg3 from "../assets/plane4.jpg";
+import HeroSection from '../components/HeroSection.jsx'
 
-export default function Home() {
+import React from "react";
+import { Link } from "react-router-dom";
+import heroImage from "../assets/plane.jpg"; // <-- replace with your hero image
+
+const Home = () => {
   return (
-    <div className="text-white">
-      {/* Hero Section */}
-      <HeroSection />
+    <div className="home">
 
-      {/* About Section */}
-      <section className="min-h-screen flex flex-col justify-center items-center bg-gray-900 text-center px-6">
-        <h2 className="text-4xl font-bold mb-4">About Us</h2>
-        <p className="max-w-2xl text-lg text-gray-300">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-          amet officiis autem! A simple placeholder for your company's story.
+      {/* ------------------------------- HERO SECTION ------------------------------- */}
+    <HeroSection/>
+
+      {/* ------------------------------- ABOUT SECTION -------------------------------- */}
+      <section style={{ padding: "60px 20px", maxWidth: "1100px", margin: "0 auto" }}>
+        <h2 style={{ fontSize: "2rem", marginBottom: "20px", fontWeight: "700" }}>About Our Lab</h2>
+        <p style={{ lineHeight: "1.75", fontSize: "1.1rem" }}>
+          Our research group focuses on cutting-edge exploration in computational sciences,
+          data-driven systems, AI, and applied technologies. We collaborate with global
+          institutions to push the boundaries of innovation and empower future scientists.
         </p>
       </section>
 
-      {/* Services Section with background image */}
-      <section
-        className="relative min-h-screen bg-fixed bg-cover bg-center flex flex-col justify-center items-center text-center"
-        style={{
-          backgroundImage: `url(${bg1})`,
-        }}
-      >
-        <div className="absolute inset-0 bg-black bg-opacity-60"></div>
-        <div className="relative z-10 px-6">
-          <h2 className="text-4xl font-bold mb-4">Our Services</h2>
-          <p className="max-w-2xl text-lg text-gray-300 mx-auto">
-            Placeholder for services offered. Background image stays fixed while you scroll.
-          </p>
+      {/* --------------------------- FEATURED RESEARCH SECTION ------------------------- */}
+      <section style={{ padding: "60px 20px", background: "#f8f9fa" }}>
+        <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
+          <h2 style={{ fontSize: "2rem", marginBottom: "20px", fontWeight: "700" }}>Featured Research</h2>
+
+          <div style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+            gap: "20px"
+          }}>
+            {[
+              {
+                title: "AI-Assisted Smart Agriculture",
+                desc: "Developing intelligent models to improve crop yield and sustainability."
+              },
+              {
+                title: "Autonomous Drone Navigation",
+                desc: "Enhancing UAV safety and accuracy with real-time motion prediction."
+              },
+              {
+                title: "Medical Image Enhancement",
+                desc: "Using deep learning to improve early detection in radiology."
+              },
+            ].map((item, index) => (
+              <div key={index} style={{
+                background: "#fff",
+                borderRadius: "10px",
+                padding: "20px",
+                boxShadow: "0 4px 8px rgba(0,0,0,0.1)"
+              }}>
+                <h3 style={{ fontSize: "1.25rem", fontWeight: "700", marginBottom: "10px" }}>
+                  {item.title}
+                </h3>
+                <p style={{ lineHeight: "1.6" }}>{item.desc}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* Projects Section */}
-      <section className="min-h-screen flex flex-col justify-center items-center bg-gray-800 text-center px-6">
-        <h2 className="text-4xl font-bold mb-4">Our Projects</h2>
-        <p className="max-w-2xl text-lg text-gray-300">
-          Showcase your work here. This section scrolls normally.
-        </p>
+      {/* --------------------------- FEATURED PUBLICATIONS SECTION --------------------- */}
+      <section style={{ padding: "60px 20px", maxWidth: "1100px", margin: "0 auto" }}>
+        <h2 style={{ fontSize: "2rem", marginBottom: "20px", fontWeight: "700" }}>Recent Publications</h2>
+
+        <ul style={{ listStyle: "none", padding: 0 }}>
+          {[
+            "Deep Learning Models for Efficient Object Detection – IEEE, 2023",
+            "Smart City IoT Framework for Real-Time Analytics – ACM, 2024",
+            "Unsupervised Feature Learning in Medical Diagnosis – Springer, 2024"
+          ].map((pub, i) => (
+            <li key={i} style={{
+              background: "#f1f1f1",
+              padding: "15px 20px",
+              borderRadius: "8px",
+              marginBottom: "12px",
+              fontSize: "1.05rem"
+            }}>
+              {pub}
+            </li>
+          ))}
+        </ul>
+
+        <Link to="/publications"
+          style={{
+            display: "inline-block",
+            marginTop: "15px",
+            textDecoration: "none",
+            fontWeight: "600",
+            color: "#0b5ed7"
+          }}
+        >
+          View All Publications →
+        </Link>
       </section>
 
-      {/* Another image section */}
-      <section
-        className="relative min-h-screen bg-fixed bg-cover bg-center flex flex-col justify-center items-center text-center"
-        style={{
-          backgroundImage: `url(${bg2})`,
-        }}
-      >
-        <div className="absolute inset-0 bg-black bg-opacity-60"></div>
-        <div className="relative z-10 px-6">
-          <h2 className="text-4xl font-bold mb-4">Our Vision</h2>
-          <p className="max-w-2xl text-lg text-gray-300 mx-auto">
-            Another parallax section to keep the page visually engaging.
-          </p>
+      {/* -------------------------------- CTA SECTION -------------------------------- */}
+      <section style={{
+        padding: "60px 20px",
+        background: "#0b5ed7",
+        color: "white",
+        textAlign: "center"
+      }}>
+        <h2 style={{ fontSize: "2rem", fontWeight: "700" }}>Join Our Mission</h2>
+        <p style={{ marginTop: "10px", fontSize: "1.15rem" }}>
+          Want to contribute to groundbreaking research? Get in touch or apply to join the lab.
+        </p>
+
+        <div style={{ marginTop: "25px" }}>
+          <Link
+            to="/contact"
+            style={{
+              background: "#fff",
+              color: "#0b5ed7",
+              padding: "12px 25px",
+              borderRadius: "8px",
+              textDecoration: "none",
+              marginRight: "15px",
+              fontWeight: "600"
+            }}
+          >
+            Contact Us
+          </Link>
+
+          <Link
+            to="/join"
+            style={{
+              background: "#ffc107",
+              color: "#000",
+              padding: "12px 25px",
+              borderRadius: "8px",
+              textDecoration: "none",
+              fontWeight: "600"
+            }}
+          >
+            Join the Team
+          </Link>
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section className="min-h-screen flex flex-col justify-center items-center bg-gray-900 text-center px-6">
-        <h2 className="text-4xl font-bold mb-4">Contact Us</h2>
-        <p className="max-w-2xl text-lg text-gray-300">
-          Email: info@example.com <br /> Phone: +123 456 789
-        </p>
-      </section>
-
-      {/* Footer */}
-      
     </div>
   );
-}
+};
+
+export default Home;
