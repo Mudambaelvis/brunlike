@@ -1,0 +1,30 @@
+{
+  "intro": "Our research group maintains strong partnerships with universities, national laboratories, and international research networks. These collaborations support large-scale projects, interdisciplinary work, and shared scientific infrastructure.",
+
+  "institutionalCollaborations": [
+    {
+      "name": "Technical University of Darmstadt",
+      "description": "Department of Chemistry – Joint research in polymer synthesis and sustainability."
+    },
+    {
+      "name": "Max Planck Institute for Polymer Research",
+      "description": "Collaborative work on advanced polymer characterization and molecular design."
+    },
+    {
+      "name": "Fraunhofer Institute for Materials",
+      "description": "Partnerships on sustainable materials and industrial-scale polymer applications."
+    }
+  ],
+
+  "researchConsortia": [
+    "Circular Materials Innovation Network (EU-wide collaboration)",
+    "Green Polymers European Initiative – Sustainable alternatives for plastics.",
+    "Collaborative Research Center for Functional Materials – DFG-funded network."
+  ],
+
+  "fundingSources": [
+    "DFG – German Research Foundation",
+    "European Research Council (ERC)",
+    "Federal Ministry of Education and Research (BMBF)"
+  ]
+}

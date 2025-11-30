@@ -1,0 +1,41 @@
+{
+  "principalInvestigator": {
+    "name": "Prof. Dr. Jane Jane",
+    "role": "Head of Research Group",
+    "focus": "Sustainable polymers, functional materials, advanced polymerization techniques.",
+    "image": "/images/team/jane.jpg"
+  },
+
+  "members": [
+    {
+      "name": "Alice Alice",
+      "role": "PhD Candidate",
+      "focus": "Bio-based polymers and material degradation pathways.",
+      "image": "/images/team/alice.jpg"
+    },
+    {
+      "name": "Tom Thomas",
+      "role": "Postdoctoral Researcher",
+      "focus": "Polymer functionalization & advanced spectroscopy.",
+      "image": "/images/team/tom.jpg"
+    },
+    {
+      "name": "Sara Sarah",
+      "role": "Research Assistant",
+      "focus": "Lab automation and analytical chemistry.",
+      "image": "/images/team/sara.jpg"
+    },
+    {
+      "name": "David David",
+      "role": "Master's Student",
+      "focus": "Novel polymer synthesis pathways.",
+      "image": "/images/team/david.jpg"
+    },
+    {
+      "name": "Julia July",
+      "role": "Master's Student",
+      "focus": "Material lifecycle assessment.",
+      "image": "/images/team/julia.jpg"
+    }
+  ]
+}

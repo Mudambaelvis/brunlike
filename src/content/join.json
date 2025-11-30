@@ -1,0 +1,27 @@
+{
+  "intro": "We are always looking for motivated researchers to join our group. Whether you are interested in graduate studies, postdoctoral work, or research internships, we welcome inquiries from candidates with strong backgrounds in chemistry, materials science, physics, or computational fields.",
+
+  "positions": [
+    {
+      "title": "PhD Positions",
+      "description": "We regularly admit new PhD students through the graduate programs of our department. Research topics include polymer chemistry, materials design, and data-driven molecular research."
+    },
+    {
+      "title": "Postdoctoral Researchers",
+      "description": "Competitive postdoctoral opportunities are available for candidates with strong publication records and expertise in synthesis, spectroscopy, computation, or related fields."
+    },
+    {
+      "title": "Student Assistants & Internships",
+      "description": "BSc/MSc students are welcome to apply for research internships, thesis projects, or part-time student assistant roles."
+    }
+  ],
+
+  "howToApply": [
+    "Send your CV and a short motivation statement.",
+    "Mention which research area interests you.",
+    "Include transcripts (students) or publication list (postdocs).",
+    "Optionally include contact information for references."
+  ],
+
+  "email": "researchgroup@example.com"
+}

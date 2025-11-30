@@ -1,0 +1,22 @@
+
+
+{
+  "mission": "We are a multidisciplinary research group dedicated to advancing innovation in artificial intelligence, autonomous systems...",
+
+  "researchPreview": [
+    {
+      "title": "AI & Machine Learning",
+      "desc": "Building predictive models and intelligent systems."
+    },
+    {
+      "title": "Autonomous Drones",
+      "desc": "Navigation, safety, and mission-planning research."
+    },
+    {
+      "title": "Data Science & Analytics",
+      "desc": "Large-scale data modeling and visualization."
+    }
+  ],
+
+  "teamIntro": "Our group is composed of passionate researchers..."
+}

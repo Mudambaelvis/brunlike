@@ -1,0 +1,19 @@
+{
+  "pi": {
+    "name": "Dr. Jane Jane",
+    "title": "Professor of Polymer Chemistry",
+    "email": "janedoe@university.edu",
+    "office": {
+      "address": "Building C, Room 204\nUniversity of Science & Technology",
+      "mapUrl": "https://maps.google.com"
+    },
+    "profiles": {
+      "twitter": "https://twitter.com",
+      "linkedin": "https://linkedin.com",
+      "scholar": "https://scholar.google.com",
+      "orcid": "https://orcid.org"
+    }
+  },
+  "intro": "For inquiries about research collaborations, open positions, or academic matters, please reach out using the contact information below.",
+  "footerNote": "For administrative questions, please contact the department office."
+}

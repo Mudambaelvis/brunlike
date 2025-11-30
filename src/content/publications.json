@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Cognitive Growth Across Cultures",
+    "authors": "Doe, J. & Smith, J.",
+    "year": 2024,
+    "cover": "/src/assets/covers/paper1.jpg",
+    "link": "https://example.com"
+  },
+  {
+    "title": "Behavioral Patterns in Adolescence",
+    "authors": "Lee, M. & Doe, J.",
+    "year": 2023,
+    "cover": "/src/assets/covers/paper2.jpg",
+    "link": "https://example.com"
+  }
+]

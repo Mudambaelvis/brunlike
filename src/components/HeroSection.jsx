@@ -9,7 +9,7 @@ export default function HeroSection() {
         backgroundImage: `url(${backgroundImage})`,
       }}
     >
-      <div className="absolute inset-0 bg-black bg-opacity-40"></div> {/* dark overlay */}
+      <div className="absolute inset-0 bg-black bg-opacity-80"></div> {/* dark overlay */}
       
       <div className="relative z-10 text-center">
         <h1 className="text-5xl md:text-6xl font-bold mb-4">Welcome to our Research Lab</h1>

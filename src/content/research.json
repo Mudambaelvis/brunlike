@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Computational Neuroscience",
+    "summary": "Exploring neural information processing through computational models and large-scale data analysis.",
+    "details": "This section can later include methodology, current projects, datasets in use, and key collaborators."
+  },
+  {
+    "id": 2,
+    "title": "Machine Learning for Biological Systems",
+    "summary": "Developing predictive algorithms to understand biological signals, patterns, and interactions.",
+    "details": "More detailed text will go here—your client will replace this with actual research descriptions."
+  },
+  {
+    "id": 3,
+    "title": "AI-Driven Diagnostics",
+    "summary": "Using ML to enhance medical imaging, classification tasks, and early disease detection.",
+    "details": "Detailed explanations, workflows, diagrams, or links will be added by your client later."
+  },
+  {
+    "id": 4,
+    "title": "Data-Driven Health Research",
+    "summary": "Analyzing large-scale biomedical datasets to uncover new scientific insights.",
+    "details": "This expandable content can describe the lab’s tools, analysis pipelines, and findings."
+  },
+  {
+    "id": 5,
+    "title": "Neural Signal Processing",
+    "summary": "Developing computational tools for the analysis of neuronal and physiological signals.",
+    "details": "More info will be inserted later by your client."
+  },
+  {
+    "id": 6,
+    "title": "Collaborative Research Initiatives",
+    "summary": "Working with universities, hospitals, and research consortia worldwide.",
+    "details": "Your client can add funding details, partner labs, and current consortium projects."
+  }
+]
